@@ -3,10 +3,14 @@
     <div class="about-me-text">
       <div>Hi, I'm Brenda Quach.</div>
       <div>Software Engineer.</div>
-      <div class="about-summary"> Frontend-focused engineer. I build intuitive interfaces and data visualizations that make complexity simple. I love crafting experiences that feel effortless to use. </div>
+      <div class="about-summary">
+        Frontend-focused engineer. I build intuitive interfaces and data
+        visualizations that make complexity simple. I love crafting experiences
+        that feel effortless to use.
+      </div>
     </div>
     <div class="about-me-img">
-      <img src="/public/profile-pic.png"></img>
+      <img src="@/assets/profile-pic.png" />
     </div>
   </div>
 </template>

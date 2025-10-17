@@ -7,7 +7,7 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">
-          <i class="fa-solid fa-laptop" />Experience</a
+          <i class="fa-solid fa-file" />Experience</a
         >
       </li>
       <li class="nav-item">
@@ -16,12 +16,7 @@
         >
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"> <i class="fa-solid fa-laptop" />Skills</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"
-          ><i class="fa-solid fa-envelope" />Contact Me</a
-        >
+        <a class="nav-link" href="#"> <i class="fa-solid fa-gear"></i>Skills</a>
       </li>
     </ul>
 
