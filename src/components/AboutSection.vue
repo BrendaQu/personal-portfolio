@@ -23,7 +23,7 @@
   height: auto;
   justify-content: center;
   align-items: center;
-  font-size: 36px;
+  font-size: 32px;
   text-align: center;
   flex-wrap: wrap;
 }
