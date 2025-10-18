@@ -1,6 +1,9 @@
 <template>
-  <div class="experience-wrapper">
-    <div class="section-title">Experience.</div>
+  <div id="ExperienceSection" class="experience-wrapper">
+    <div class="section-title">
+      Experience
+      <div class="period-style">.</div>
+    </div>
     <div v-for="job in experienceObjList">
       <ExperienceCard
         :cardCompany="job.companyName"
@@ -41,5 +44,6 @@ const experienceObjList = [
 .experience-wrapper {
   display: block;
   text-align: left;
+  padding-top: 20px;
 }
 </style>
