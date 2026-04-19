@@ -8,14 +8,21 @@
         </div>
       </div>
       <div class="project-card-description">{{ projectDescription }}</div>
+      <div class="project-card-tech-section">
+        <div v-for="skill in projectSkills" class="project-card-tech-item">
+          <SkillsPill :pillSkillName="skill" />
+        </div>
+      </div>
     </div>
   </div>
 </template>
 <script lang="ts" setup>
+import SkillsPill from "./SkillsPill.vue";
 const props = defineProps<{
   projectTitle: string;
   projectLink: string;
   projectDescription: string;
+  projectSkills: [];
 }>();
 const handleClick = () => {
   window.open(props.projectLink);
@@ -24,7 +31,7 @@ const handleClick = () => {
 <style lang="css" scoped>
 .project-card-wrapper {
   width: 300px;
-  height: 200px;
+  height: auto;
   border: 1px solid #e6dcc6;
   border-radius: 10px;
   background-color: #a4cb9d;
@@ -33,7 +40,9 @@ const handleClick = () => {
   margin: 20px;
   cursor: pointer;
   text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .project-card-wrapper:hover {
@@ -63,5 +72,18 @@ const handleClick = () => {
 
 .fa-solid {
   font-size: 20px;
+}
+
+.project-card-tech-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  padding-top: 5px;
+}
+
+.project-card-tech-item {
+  display: flex;
+  flex-direction: row;
+  padding: 3px;
 }
 </style>

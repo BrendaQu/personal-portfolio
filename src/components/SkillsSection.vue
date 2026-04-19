@@ -1,7 +1,7 @@
 <template>
   <div id="SkillsSection">
     <div class="section-title">
-      Skills
+      Technologies
       <div class="period-style">.</div>
     </div>
     <div class="skills-wrapper">

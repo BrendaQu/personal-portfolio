@@ -27,8 +27,9 @@ defineProps<{
   padding: 20px;
   color: #111827;
   border: 1px solid #e6dcc6;
+
   border-radius: 10px;
-  background-color: #a4cb9d;
+  background-color: #e7e4dd;
   min-width: 280px;
 }
 
@@ -44,6 +45,7 @@ defineProps<{
 
 .card-company-title {
   font-style: italic;
+  color: #55a855;
   font-size: 18px;
 }
 
