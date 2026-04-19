@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-wrapper">© 2025</div>
+  <div class="footer-wrapper">© 2026</div>
 </template>
 <style lang="css">
 .footer-wrapper {
