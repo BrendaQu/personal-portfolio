@@ -23,7 +23,7 @@ defineProps<{
   text-align: left;
   display: flex;
   flex-direction: column;
-  margin: 15px 20px;
+  margin: 15px 50px;
   padding: 20px;
   color: #111827;
   border: 1px solid #e6dcc6;

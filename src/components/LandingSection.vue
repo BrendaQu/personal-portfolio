@@ -1,39 +1,40 @@
 <template>
-  <div id="AboutSection" class="about-me">
-    <div class="about-me-text">
+  <div id="LandingSection" class="Landing">
+    <div class="Landing-text">
       <div class="typing-text">Hi, I'm Brenda Quach.</div>
       <div style="color: #5cb85c">Software Engineer.</div>
-      <div class="about-summary">
+      <div class="Landing-summary">
         Frontend-focused engineer. I build intuitive interfaces and data
         visualizations that make complexity simple. I love crafting experiences
         that feel effortless to use.
       </div>
     </div>
-    <div class="about-me-img">
-      <img src="@/assets/pic-sticker.png" width="200px" />
+    <div class="Landing-img">
+      <img class="profile-img" src="@/assets/pic-sticker.png" width="200px" />
     </div>
   </div>
 </template>
 <script lang="ts"></script>
 <style lang="css">
-.about-me {
+.Landing {
   display: flex;
   flex-direction: row;
+  gap: 20px;
   width: 100%;
-  height: auto;
+  min-height: 870px;
   justify-content: center;
   align-items: center;
-  font-size: 32px;
+  font-size: 40px;
   text-align: center;
   flex-wrap: wrap;
 }
-.about-summary {
-  font-size: 18px;
-  width: 400px;
+.Landing-summary {
+  font-size: 22px;
+  width: 600px;
 }
 
-.about-me-text {
-  width: 50%;
+.Landing-text {
+  width: 60%;
   min-width: 350px;
   display: flex;
   flex-direction: column;
@@ -41,19 +42,27 @@
   align-items: center;
 }
 
-.about-me-img {
-  margin: 20px;
-  padding: 20px;
+.Landing-img {
+  margin: 10px;
+  padding: 10px;
+}
+
+.profile-img {
+  border: 2px solid #5faf5f;
+  border-radius: 50%;
+  box-shadow: 10px 10px 5px #c5c5c5;
 }
 
 .typing-text {
   display: inline-block;
   font-family: monospace;
+  font-size: 45px;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid #198754; /* Green caret */
   width: 0;
-  animation: typing 1.5s steps(10, end) forwards,
+  animation:
+    typing 1.5s steps(10, end) forwards,
     blink 0.6s step-end infinite alternate;
 }
 

@@ -1,6 +1,6 @@
 <script setup>
 import NavBar from "./components/NavBar.vue";
-import AboutSection from "./components/AboutSection.vue";
+import LandingSection from "./components/LandingSection.vue";
 import ExperienceSection from "./components/ExperienceSection.vue";
 import ProjectsSection from "./components/ProjectsSection.vue";
 import SkillsSection from "./components/SkillsSection.vue";
@@ -10,7 +10,7 @@ import Footer from "./components/Footer.vue";
 <template>
   <div>
     <NavBar />
-    <AboutSection />
+    <LandingSection />
     <ExperienceSection />
     <ProjectsSection />
     <SkillsSection />
