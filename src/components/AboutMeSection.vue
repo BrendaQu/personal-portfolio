@@ -9,14 +9,53 @@
         I'm a frontend-focused Software Engineer with 3+ years of experience
         building interactive, data-driven web applications. My path into
         software wasn't traditional, I started as an Environmental Engineering
-        student at the University of Colorado Boulder, and in my junior year
-        picked up a Computer Science minor out of curiosity. I quickly fell in
-        love with it and knew I wanted to pursue software development. I went on
-        to complete an intensive full-stack bootcamp with Revature, which led to
-        a contract role at Bloomberg Industry Group where I was brought on
-        full-time after demonstrating consistent impact on the team. At
-        Bloomberg I spent over three years crafting data visualizations and
-        scalable UI features used by real users every day. <br />
+        student at the
+        <a
+          class="about-me-link"
+          href="https://www.colorado.edu/"
+          target="_blank"
+        >
+          University of Colorado Boulder</a
+        >, and in my junior year picked up a Computer Science minor out of
+        curiosity. I quickly fell in love with it and knew I wanted to pursue
+        software development. I went on to complete an intensive full-stack
+        bootcamp with
+        <a class="about-me-link" href="https://revature.com/" target="_blank">
+          Revature </a
+        >, which led to a contract role at
+        <a
+          class="about-me-link"
+          href="https://www.bloombergindustry.com/"
+          target="_blank"
+        >
+          Bloomberg Industry Group</a
+        >
+        where I was brought on full-time after demonstrating consistent impact
+        on the team.
+        <br />
+        <br />
+        At Bloomberg, I primarily worked on their
+        <a class="about-me-link" href="https://about.bgov.com/" target="_blank">
+          Bloomberg Government</a
+        >
+        product, where I spent over three years crafting data visualizations and
+        scalable UI features. A couple notable features I built include an
+        interactive Sankey chart for the
+        <a
+          class="about-me-link"
+          href="https://about.bgov.com/products/federal-budget-and-spending/"
+          target="_blank"
+          >Federal Budget and Spending Insight
+        </a>
+        product and a bill density heat map for the
+        <a
+          class="about-me-link"
+          href="https://about.bgov.com/products/public-affairs-intelligence/federal-and-state-tracking/"
+          target="_blank"
+          >Federal and State Tracking</a
+        >
+        product.
+        <br />
         <br />
 
         I specialize in Vue.js, D3.js, TypeScript, and Javascript, with a
@@ -32,17 +71,40 @@
 <style lang="css">
 .about-me-wrapper {
   width: 100%;
-  height: 500px;
+  max-width: 1280px;
+  height: auto;
   padding-top: 20px;
 }
 
 .about-me-summary {
-  width: 80%;
   text-align: left;
   padding: 10px;
   padding-top: 20px;
   margin-left: 40px;
-  font-size: 18px;
+  margin-right: 40px;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.about-me-link {
+  text-decoration: none !important;
+  color: #55a855 !important;
+  position: relative;
+  display: inline-block;
+}
+
+.about-me-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #55a855;
+  transition: width 0.3s ease;
+}
+
+.about-me-link:hover::after {
+  width: 100%;
 }
 </style>

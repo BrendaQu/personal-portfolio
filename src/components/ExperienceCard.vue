@@ -1,12 +1,15 @@
 <template>
-  <div class="card-wrapper">
+  <div v-if="cardVisible" class="card-wrapper">
     <div class="card-grouping-1">
-      <div class="card-company">{{ cardCompany }}</div>
-      <div class="card-years-active">{{ cardCompanyYears }}</div>
+      <div class="card-company-title">{{ cardCompanyTitle }}</div>
+      <div class="card-company">
+        <a :href="cardCompanyLink" target="_blank">@ {{ cardCompany }}</a>
+      </div>
     </div>
-    <div class="card-company-title">{{ cardCompanyTitle }}</div>
-    <div class="card-company-desc">
-      {{ cardCompanyDescription }}
+    <div class="card-years-active">{{ cardCompanyYears }}</div>
+    <div v-for="item in cardCompanyDescription" class="card-company-desc">
+      <i class="fa-solid fa-caret-right" />
+      <div>{{ item }}</div>
     </div>
   </div>
 </template>
@@ -15,7 +18,9 @@ defineProps<{
   cardCompany: string;
   cardCompanyYears: string;
   cardCompanyTitle: string;
-  cardCompanyDescription: string;
+  cardCompanyDescription: [];
+  cardCompanyLink: string;
+  cardVisible: boolean;
 }>();
 </script>
 <style lang="css" scoped>
@@ -23,44 +28,66 @@ defineProps<{
   text-align: left;
   display: flex;
   flex-direction: column;
-  margin: 15px 50px;
-  padding: 20px;
+  padding: 5px 20px;
   color: #111827;
-  border: 1px solid #e6dcc6;
-
-  border-radius: 10px;
-  background-color: #e7e4dd;
-  min-width: 280px;
+  width: 100%;
+  min-width: 330px;
+  min-height: 450px;
+  overflow-y: auto;
 }
 
 .card-grouping-1 {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
 }
 .card-company {
   font-size: 20px;
   font-weight: bold;
+  color: #55a855;
+  position: relative;
+}
+
+.card-company a {
+  text-decoration: none !important;
+  color: #55a855;
+}
+
+.card-company::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+  width: 0;
+  height: 1px;
+  background-color: #55a855;
+  transition: width 0.3s ease;
+}
+
+.card-company:hover::after {
+  width: 92%;
 }
 
 .card-company-title {
-  font-style: italic;
-  color: #55a855;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: bold;
+  padding-right: 8px;
 }
 
 .card-company-desc {
+  display: flex;
+  gap: 8px;
   font-size: 16px;
+  padding: 6px;
 }
 
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.6s ease;
+.card-years-active {
+  font-size: 18px;
+  padding-bottom: 10px;
 }
 
-.fade-in.show {
-  opacity: 1;
-  transform: translateY(0);
+.fa-caret-right {
+  color: #198754;
+  padding-top: 4px;
 }
 </style>
