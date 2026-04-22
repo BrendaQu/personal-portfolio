@@ -1,9 +1,9 @@
 <template>
   <div class="nav-wrapper">
-    <div class="nav-home">Brenda Quach</div>
+    <div class="nav-home" href="#LandingSection">Brenda Quach</div>
     <ul class="nav nav-pills nav-items-wrapper">
       <li class="nav-item">
-        <a class="nav-link" href="#AboutSection">
+        <a class="nav-link" href="#AboutMeSection">
           <i class="fa-solid fa-user" />
           <div class="nav-text">About Me</div></a
         >
