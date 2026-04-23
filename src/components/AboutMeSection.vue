@@ -141,5 +141,8 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  .about-img {
+    margin-right: 0px;
+  }
 }
 </style>

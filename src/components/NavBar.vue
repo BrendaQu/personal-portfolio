@@ -1,33 +1,63 @@
 <template>
   <div class="nav-wrapper">
-    <div class="nav-home" href="#LandingSection">Brenda Quach</div>
+    <a class="nav-home" href="#LandingSection">Brenda Quach</a>
     <ul class="nav nav-pills nav-items-wrapper">
       <li class="nav-item">
-        <a class="nav-link" href="#AboutMeSection">
+        <a
+          :class="[
+            'nav-link',
+            { 'nav-active': activeSection === 'AboutMeSection' },
+          ]"
+          href="#AboutMeSection"
+        >
           <i class="fa-solid fa-user" />
           <div class="nav-text">About Me</div></a
         >
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#ExperienceSection">
+        <a
+          :class="[
+            'nav-link',
+            { 'nav-active': activeSection === 'ExperienceSection' },
+          ]"
+          href="#ExperienceSection"
+        >
           <i class="fa-solid fa-file" />
           <div class="nav-text">Experience</div>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#ProjectsSection">
+        <a
+          :class="[
+            'nav-link',
+            { 'nav-active': activeSection === 'ProjectsSection' },
+          ]"
+          href="#ProjectsSection"
+        >
           <i class="fa-solid fa-laptop" />
           <div class="nav-text">Projects</div>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#SkillsSection">
+        <a
+          :class="[
+            'nav-link',
+            { 'nav-active': activeSection === 'SkillsSection' },
+          ]"
+          href="#SkillsSection"
+        >
           <i class="fa-solid fa-gear" />
           <div class="nav-text">Skills</div>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#CertificationsSection">
+        <a
+          :class="[
+            'nav-link',
+            { 'nav-active': activeSection === 'CertificationsSection' },
+          ]"
+          href="#CertificationsSection"
+        >
           <i class="fa-solid fa-certificate" />
           <div class="nav-text">Certifications</div>
         </a>
@@ -44,7 +74,30 @@
     </div>
   </div>
 </template>
-<script lang="ts"></script>
+<script lang="ts" setup>
+import { ref, onMounted } from "vue";
+const activeSection = ref("");
+
+onMounted(() => {
+  const sections = document.querySelectorAll(
+    "#LandingSection, #AboutMeSection, #ExperienceSection, #ProjectsSection, #SkillsSection, #CertificationsSection",
+  );
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          console.log("in if is intersecting", entry.target.id);
+          activeSection.value = entry.target.id;
+        }
+      });
+    },
+    { threshold: 0, rootMargin: "-50% 0px -50% 0px" },
+  );
+
+  sections.forEach((section) => observer.observe(section));
+});
+</script>
 <style lang="css">
 .nav-wrapper {
   display: flex;
@@ -60,7 +113,12 @@
   -webkit-backdrop-filter: blur(10px);
 }
 
+.nav-active {
+  color: #55a855 !important;
+}
 .nav-home {
+  text-decoration: none !important;
+  color: #111827;
   font-size: 24px;
   font-weight: bold;
   padding: 2px;
@@ -95,7 +153,7 @@
   }
 }
 
-@media (max-width: 437px) {
+@media (max-width: 471px) {
   .nav-home {
     font-size: 16px;
     min-width: 130px;
@@ -131,10 +189,10 @@
   padding: 8px;
   margin: 2px;
 }
-a:hover {
+.nav-item a:hover {
   color: #5cb85c !important;
 }
-a:focus {
+.nav-item a:focus {
   color: #5cb85c !important;
 }
 

@@ -30,7 +30,6 @@ defineProps<{
   text-align: left;
   display: flex;
   flex-direction: column;
-  padding: 5px 20px;
   color: #111827;
   width: 100%;
   min-width: 330px;

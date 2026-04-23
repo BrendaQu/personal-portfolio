@@ -71,6 +71,10 @@ const getImgUrl = (img: string) => {
 
 .project-card-wrapper:hover {
   color: #5cb85c;
+  .project-img {
+    opacity: 1;
+    filter: grayscale(0%);
+  }
 }
 
 .project-card-title {
@@ -91,6 +95,8 @@ const getImgUrl = (img: string) => {
   height: 200px;
   object-fit: cover;
   object-position: top;
+  opacity: 0.7;
+  filter: grayscale(90%);
 }
 
 .fa-solid {

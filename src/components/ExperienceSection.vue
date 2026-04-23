@@ -108,6 +108,10 @@ const handleClick = (companyId: string) => {
   padding-left: 50px;
 }
 
+.exp-tab-content {
+  padding: 5px 20px;
+  margin-right: 50px;
+}
 .exp-nav-side-panel {
   display: flex;
   flex-wrap: nowrap;
@@ -160,6 +164,9 @@ const handleClick = (companyId: string) => {
   .exp-nav-side-item.active {
     border-left: none;
     border-bottom: 2px solid #55a855;
+  }
+  .exp-tab-content {
+    padding: 20px 0px;
   }
 }
 </style>

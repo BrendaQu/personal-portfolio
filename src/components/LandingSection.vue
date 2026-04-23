@@ -69,7 +69,31 @@
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 515px) {
+  .Landing {
+    font-size: 40px;
+  }
+  .typing-text {
+    font-size: 40px;
+  }
+  .Landing-summary {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 475px) {
+  .Landing {
+    font-size: 35px;
+  }
+  .typing-text {
+    font-size: 35px;
+  }
+  .Landing-summary {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 415px) {
   .Landing {
     font-size: 30px;
   }
@@ -77,7 +101,7 @@
     font-size: 30px;
   }
   .Landing-summary {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 </style>
