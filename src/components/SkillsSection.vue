@@ -4,7 +4,7 @@
       Skills
       <div class="period-style">.</div>
     </div>
-    <div class="skills-wrapper">
+    <div class="skills-wrapper fade-in">
       <div v-for="(skills, key) in skillsList" :key="key">
         <div class="category-name">{{ key }}</div>
         <div class="skills-items-container">

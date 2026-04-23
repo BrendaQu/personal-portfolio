@@ -5,7 +5,7 @@
       <div class="period-style">.</div>
     </div>
     <div class="about-me-content">
-      <div class="about-me-summary">
+      <div class="about-me-summary fade-in">
         <p>
           I'm a frontend-focused Software Engineer with 3+ years of experience
           building interactive, data-driven web applications. My path into
@@ -70,8 +70,17 @@
           along the way.
         </p>
       </div>
-      <div class="about-img">
-        <img class="profile-img" src="@/assets/pic-sticker.png" width="250px" />
+      <div class="about-img fade-in">
+        <a
+          href="https://www.linkedin.com/in/brenda-q-50778617a/"
+          target="_blank"
+        >
+          <img
+            class="profile-img"
+            src="@/assets/pic-sticker.png"
+            width="250px"
+          />
+        </a>
       </div>
     </div>
   </div>
@@ -131,6 +140,11 @@
   border: 2px solid #5faf5f;
   border-radius: 50%;
   box-shadow: 10px 10px 5px #c5c5c5;
+}
+.profile-img:hover {
+  filter: grayscale(90%);
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 @media (max-width: 775px) {

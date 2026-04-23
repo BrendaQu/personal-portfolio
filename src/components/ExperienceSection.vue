@@ -16,7 +16,7 @@
           {{ job.companyName }}
         </button>
       </div>
-      <div class="exp-tab-content">
+      <div class="exp-tab-content fade-in">
         <div v-for="job in experienceObjList" :id="job.companyId">
           <ExperienceCard
             :cardCompany="job.companyName"

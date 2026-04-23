@@ -2,11 +2,13 @@
   <div id="LandingSection" class="Landing">
     <div class="Landing-text">
       <div class="typing-text">Hi, I'm Brenda Quach.</div>
-      <div style="color: #5cb85c">Software Engineer.</div>
+      <div class="landing-subtitle" style="color: #5cb85c">
+        Software Engineer.
+      </div>
       <div class="Landing-summary">
-        Frontend-focused engineer. I build intuitive interfaces and data
-        visualizations that make complexity simple. I love crafting experiences
-        that feel effortless to use.
+        Frontend-focused engineer specializing in data visualizations and
+        interactive interfaces. I turn complex data into experiences that feel
+        effortless to use.
       </div>
     </div>
   </div>
@@ -52,7 +54,10 @@
 }
 
 .Landing-summary {
-  animation: fadeIn 1.5s ease;
+  animation: fadeUp 1s ease 2.7s both;
+}
+.landing-subtitle {
+  animation: fadeUp 1s ease 2s both;
 }
 @keyframes typing {
   from {
@@ -66,6 +71,17 @@
 @keyframes blink {
   50% {
     border-color: transparent;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 

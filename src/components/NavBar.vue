@@ -87,7 +87,6 @@ onMounted(() => {
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          console.log("in if is intersecting", entry.target.id);
           activeSection.value = entry.target.id;
         }
       });
