@@ -8,7 +8,8 @@
             'nav-link',
             { 'nav-active': activeSection === 'AboutMeSection' },
           ]"
-          href="#AboutMeSection"
+          @click.prevent="scrollTo('AboutMeSection')"
+          href="#"
         >
           <i class="fa-solid fa-user" />
           <div class="nav-text">About Me</div></a
@@ -20,7 +21,8 @@
             'nav-link',
             { 'nav-active': activeSection === 'ExperienceSection' },
           ]"
-          href="#ExperienceSection"
+          @click.prevent="scrollTo('ExperienceSection')"
+          href="#"
         >
           <i class="fa-solid fa-file" />
           <div class="nav-text">Experience</div>
@@ -32,7 +34,8 @@
             'nav-link',
             { 'nav-active': activeSection === 'ProjectsSection' },
           ]"
-          href="#ProjectsSection"
+          @click.prevent="scrollTo('ProjectsSection')"
+          href="#"
         >
           <i class="fa-solid fa-laptop" />
           <div class="nav-text">Projects</div>
@@ -44,7 +47,8 @@
             'nav-link',
             { 'nav-active': activeSection === 'SkillsSection' },
           ]"
-          href="#SkillsSection"
+          @click.prevent="scrollTo('SkillsSection')"
+          href="#"
         >
           <i class="fa-solid fa-gear" />
           <div class="nav-text">Skills</div>
@@ -56,7 +60,8 @@
             'nav-link',
             { 'nav-active': activeSection === 'CertificationsSection' },
           ]"
-          href="#CertificationsSection"
+          @click.prevent="scrollTo('CertificationsSection')"
+          href="#"
         >
           <i class="fa-solid fa-certificate" />
           <div class="nav-text">Certifications</div>
@@ -96,6 +101,13 @@ onMounted(() => {
 
   sections.forEach((section) => observer.observe(section));
 });
+
+const scrollTo = (id: string) => {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth" });
+  }
+};
 </script>
 <style lang="css">
 .nav-wrapper {
