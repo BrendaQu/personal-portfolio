@@ -6,6 +6,7 @@ import ProjectsSection from "./components/ProjectsSection.vue";
 import SkillsSection from "./components/SkillsSection.vue";
 import Footer from "./components/Footer.vue";
 import AboutMeSection from "./components/AboutMeSection.vue";
+import CertificationsSection from "./components/CertificationsSection.vue";
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import AboutMeSection from "./components/AboutMeSection.vue";
     <ExperienceSection />
     <ProjectsSection />
     <SkillsSection />
+    <CertificationsSection />
     <Footer />
   </div>
 </template>

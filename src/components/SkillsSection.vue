@@ -55,7 +55,7 @@ const skillsList = {
   text-align: left;
   padding-top: 18px;
   padding-left: 10px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .skills-items-container {

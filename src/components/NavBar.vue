@@ -26,17 +26,19 @@
           <div class="nav-text">Skills</div>
         </a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#CertificationsSection">
+          <i class="fa-solid fa-certificate" />
+          <div class="nav-text">Certifications</div>
+        </a>
+      </li>
     </ul>
 
     <div class="nav-side-links">
       <a href="https://github.com/brendaqu" target="_blank"
         ><i class="fa-brands fa-github" />
       </a>
-      <a
-        href="https://www.linkedin.com/in/brenda-q-50778617a/"
-        c
-        target="_blank"
-      >
+      <a href="https://www.linkedin.com/in/brenda-q-50778617a/" target="_blank">
         <i class="fa-brands fa-linkedin" />
       </a>
     </div>
@@ -79,7 +81,7 @@
   width: 100%;
 }
 
-@media (max-width: 790px) {
+@media (max-width: 860px) {
   .nav-text {
     display: none;
   }
@@ -113,7 +115,7 @@
 .nav-items-wrapper {
   font-size: 14px;
   min-width: 115px;
-  gap: 5px;
+  gap: 0px;
   font-weight: bold;
   border: 1px solid #f2f2f2;
   background-color: #e7e7e8;
@@ -124,6 +126,8 @@
 
 .nav-item a {
   color: #3e3e3e;
+  padding: 8px;
+  margin: 2px;
 }
 a:hover {
   color: #5cb85c !important;

@@ -9,9 +9,6 @@
         that feel effortless to use.
       </div>
     </div>
-    <div class="Landing-img">
-      <img class="profile-img" src="@/assets/pic-sticker.png" width="200px" />
-    </div>
   </div>
 </template>
 <script lang="ts"></script>
@@ -21,7 +18,7 @@
   flex-direction: row;
   gap: 20px;
   width: 100%;
-  min-height: 870px;
+  min-height: 500px;
   justify-content: center;
   align-items: center;
   font-size: 40px;
@@ -42,17 +39,6 @@
   align-items: center;
 }
 
-.Landing-img {
-  margin: 10px;
-  padding: 10px;
-}
-
-.profile-img {
-  border: 2px solid #5faf5f;
-  border-radius: 50%;
-  box-shadow: 10px 10px 5px #c5c5c5;
-}
-
 .typing-text {
   display: inline-block;
   font-family: monospace;
@@ -66,6 +52,9 @@
     blink 0.6s step-end infinite alternate;
 }
 
+.Landing-summary {
+  animation: fadeIn 1.5s ease;
+}
 @keyframes typing {
   from {
     width: 0;

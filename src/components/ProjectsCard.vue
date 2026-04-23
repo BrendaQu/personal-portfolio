@@ -1,6 +1,14 @@
 <template>
   <div @click="handleClick">
     <div class="project-card-wrapper">
+      <div>
+        <img
+          class="project-img"
+          :src="getImgUrl(projectImg)"
+          width="100%"
+          height="220px"
+        />
+      </div>
       <div class="project-heading-group">
         <div class="project-card-title">{{ projectTitle }}</div>
         <div>
@@ -23,21 +31,25 @@ const props = defineProps<{
   projectLink: string;
   projectDescription: string;
   projectSkills: [];
+  projectImg: string;
 }>();
 const handleClick = () => {
   window.open(props.projectLink);
 };
+
+const getImgUrl = (img: string) => {
+  return new URL(`../assets/${img}`, import.meta.url).href;
+};
 </script>
 <style lang="css" scoped>
 .project-card-wrapper {
-  width: 300px;
-  height: auto;
-  border: 1px solid #e6dcc6;
-  border-radius: 10px;
-  background-color: #a4cb9d;
+  width: 370px;
+  height: 430px;
+  border-radius: 5px;
+  background-color: #e7e7e8;
   color: #111827;
-  padding: 22px;
-  margin: 20px;
+  padding: 20px;
+  margin: 10px;
   cursor: pointer;
   text-align: left;
   transition:
@@ -54,20 +66,27 @@ const handleClick = () => {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 10px;
 }
 
 .project-card-wrapper:hover {
-  color: #e7e7e8;
+  color: #5cb85c;
 }
 
 .project-card-title {
   font-size: 20px;
   font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .project-card-description {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  padding-top: 25px;
+  padding-top: 12px;
+}
+
+.project-img {
+  border-radius: 5px;
 }
 
 .fa-solid {
@@ -84,6 +103,7 @@ const handleClick = () => {
 .project-card-tech-item {
   display: flex;
   flex-direction: row;
-  padding: 3px;
+  padding-right: 4px;
+  padding-top: 4px;
 }
 </style>

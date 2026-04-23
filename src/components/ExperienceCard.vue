@@ -1,24 +1,26 @@
 <template>
-  <div v-if="cardVisible" class="card-wrapper">
-    <div class="card-grouping-1">
-      <div class="card-company-title">{{ cardCompanyTitle }}</div>
-      <div class="card-company">
-        <a :href="cardCompanyLink" target="_blank">@ {{ cardCompany }}</a>
+  <Transition name="fade">
+    <div v-if="cardVisible" class="card-wrapper">
+      <div class="card-grouping-1">
+        <div class="card-company-title">{{ cardCompanyTitle }}</div>
+        <div class="card-company">
+          <a :href="cardCompanyLink" target="_blank">@ {{ cardCompany }}</a>
+        </div>
+      </div>
+      <div class="card-years-active">{{ cardCompanyYears }}</div>
+      <div v-for="item in cardCompanyDescription" class="card-company-desc">
+        <i class="fa-solid fa-caret-right" />
+        <div>{{ item }}</div>
       </div>
     </div>
-    <div class="card-years-active">{{ cardCompanyYears }}</div>
-    <div v-for="item in cardCompanyDescription" class="card-company-desc">
-      <i class="fa-solid fa-caret-right" />
-      <div>{{ item }}</div>
-    </div>
-  </div>
+  </Transition>
 </template>
 <script lang="ts" setup>
 defineProps<{
   cardCompany: string;
   cardCompanyYears: string;
   cardCompanyTitle: string;
-  cardCompanyDescription: [];
+  cardCompanyDescription: string[];
   cardCompanyLink: string;
   cardVisible: boolean;
 }>();
@@ -89,5 +91,13 @@ defineProps<{
 .fa-caret-right {
   color: #198754;
   padding-top: 4px;
+}
+
+.fade-enter-active {
+  transition: opacity 1s ease;
+}
+
+.fade-enter-from {
+  opacity: 0;
 }
 </style>

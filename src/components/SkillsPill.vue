@@ -13,24 +13,9 @@ defineProps<{
   border: 1px solid #f2f2f2;
   border-radius: 10px;
   padding: 3px 10px;
-  color: #5cb85c;
+  color: #e7e7e8;
   font-weight: bold;
   font-size: 16px;
-  background-color: #e7e7e8;
-}
-
-.pill-wrapper:hover {
-  transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-@keyframes wave {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
+  background-color: #5cb85c;
 }
 </style>

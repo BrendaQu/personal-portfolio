@@ -51,7 +51,7 @@ const experienceObjList = ref([
       "Onboarded new team members and updated technical documentation on VuePress site and Confluence, reducing onboarding time from one week to one day.",
       "Collaborated with product manager, UX designers, and external teams to translate project objectives and wireframes into polished user interfaces, while contributing effectively to an agile work environment.",
     ],
-    companyYears: "Feb 2022 - Nov 2024",
+    companyYears: "February 2022 - November 2024",
     companyLink: "https://www.bloombergindustry.com/",
     companyVisible: true,
   },
@@ -65,7 +65,7 @@ const experienceObjList = ref([
       "Served as UI/UX Developer and Designer for a class wide project, delivering wireframes and a style guide to ensure design consistency across multiple teams, optimizing development efficiency and coherence. ",
       "Delegated tasks to teammates, ensuring 100% coverage of project objectives, and organized presentations and demos to stakeholders, resulting in positive feedback for project design and effectiveness.",
     ],
-    companyYears: "Oct 2021 - March 2023",
+    companyYears: "October 2021 - March 2023",
     companyLink: "https://revature.com/",
     companyVisible: false,
   },
@@ -81,6 +81,7 @@ const experienceObjList = ref([
       "Supported recruiting with job postings, candidate search, and newsletters increasing applicant engagement by 30%.",
     ],
     companyLink: "https://gsi-companies.com/",
+    companyYears: "December 2019 - May 2021",
     companyVisible: false,
   },
 ]);
@@ -105,7 +106,7 @@ const handleClick = (companyId: string) => {
   display: grid;
   grid-template-columns: 1fr 3fr;
   padding-top: 20px;
-  padding-left: 45px;
+  padding-left: 50px;
 }
 
 .exp-nav-side-panel {
@@ -135,8 +136,4 @@ const handleClick = (companyId: string) => {
   background-color: #efeff0;
   border-left: 2px solid #55a855;
 }
-
-/* .exp-tab-content: {
-
-} */
 </style>

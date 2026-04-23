@@ -11,6 +11,7 @@
           :projectLink="project.projectLink"
           :projectDescription="project.projectDescription"
           :projectSkills="project.projectSkills"
+          :projectImg="project.projectImage"
         />
       </div>
     </div>
@@ -25,6 +26,7 @@ const projectList = [
     projectDescription:
       "Simple weather app displaying forecast for Next 5 days and hours.",
     projectLink: "https://github.com/BrendaQu/simple-weather-app",
+    projectImage: "simple-weather-app.png",
     projectSkills: ["TypeScript", "Vue", "HTML", "CSS"],
   },
   {
@@ -32,24 +34,42 @@ const projectList = [
     projectDescription:
       "Allows users to enter expenses and see monthly totals on their expenditures.",
     projectLink: "https://github.com/BrendaQu/project2-finance-tracker",
-    projectSkills: ["JavaScript", "Java", "HTML", "CSS"],
+    projectImage: "finance-tracker-app.png",
+    projectSkills: [
+      "JavaScript",
+      "Java",
+      "HTML",
+      "CSS",
+      "Bootstap",
+      "MySQL",
+      "Spring",
+    ],
   },
   {
     projectTitle: "Social Media App",
     projectDescription:
-      "Class wide project for social media app. Includes login, post, and profile pages.",
+      "Social media app includes login, post, and profile pages.",
     projectLink: "https://github.com/Revature-MiniMint/front_end/",
-    projectSkills: ["JavaScript", "React", "HTML", "CSS"],
+    projectImage: "social-media-app.png",
+    projectSkills: [
+      "JavaScript",
+      "React",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Java",
+      "Spring",
+    ],
   },
 ];
 </script>
 <style lang="css">
 .project-section-wrapper {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  margin-right: 20px;
-  padding-right: 20px;
+  padding: 20px 0px;
 }
 </style>
