@@ -71,10 +71,7 @@
         </p>
       </div>
       <div class="about-img fade-in">
-        <a
-          href="https://www.linkedin.com/in/brenda-q-50778617a/"
-          target="_blank"
-        >
+        <a href="https://www.linkedin.com/in/brenda-qu" target="_blank">
           <img
             class="profile-img"
             src="@/assets/pic-sticker.png"

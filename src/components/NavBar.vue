@@ -68,7 +68,7 @@
       <a href="https://github.com/brendaqu" target="_blank"
         ><i class="fa-brands fa-github" />
       </a>
-      <a href="https://www.linkedin.com/in/brenda-q-50778617a/" target="_blank">
+      <a href="https://www.linkedin.com/in/brenda-qu" target="_blank">
         <i class="fa-brands fa-linkedin" />
       </a>
     </div>
