@@ -1,6 +1,8 @@
 <template>
   <div class="nav-wrapper">
-    <a class="nav-home" href="#LandingSection">Brenda Quach</a>
+    <a class="nav-home" @click.prevent="scrollTo('LandingSection')" href="#"
+      >Brenda Quach</a
+    >
     <ul class="nav nav-pills nav-items-wrapper">
       <li class="nav-item">
         <a
