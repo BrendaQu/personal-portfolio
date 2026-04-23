@@ -103,14 +103,14 @@ const handleClick = (companyId: string) => {
   padding-top: 20px;
 }
 .experience-nav {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
+  display: flex;
   padding-top: 20px;
   padding-left: 50px;
 }
 
 .exp-nav-side-panel {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: flex-start;
@@ -135,5 +135,31 @@ const handleClick = (companyId: string) => {
   color: #55a855;
   background-color: #efeff0;
   border-left: 2px solid #55a855;
+}
+
+@media (max-width: 700px) {
+  .experience-nav {
+    flex-wrap: wrap;
+  }
+
+  .exp-nav-side-panel {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-start;
+    min-width: 90%;
+  }
+  .exp-nav-side-item {
+    width: 175px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-left: none;
+    border-bottom: 1px solid #cecdcd;
+  }
+  .exp-nav-side-item.active {
+    border-left: none;
+    border-bottom: 2px solid #55a855;
+  }
 }
 </style>

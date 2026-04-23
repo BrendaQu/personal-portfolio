@@ -55,7 +55,9 @@
   z-index: 1000;
   top: 0;
   width: 100%;
-  background-color: white;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .nav-home {

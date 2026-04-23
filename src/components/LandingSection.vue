@@ -27,7 +27,6 @@
 }
 .Landing-summary {
   font-size: 22px;
-  width: 600px;
 }
 
 .Landing-text {
@@ -67,6 +66,18 @@
 @keyframes blink {
   50% {
     border-color: transparent;
+  }
+}
+
+@media (max-width: 440px) {
+  .Landing {
+    font-size: 30px;
+  }
+  .typing-text {
+    font-size: 30px;
+  }
+  .Landing-summary {
+    font-size: 12px;
   }
 }
 </style>

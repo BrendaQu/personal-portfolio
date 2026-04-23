@@ -91,6 +91,7 @@
 
 .about-me-summary {
   text-align: left;
+  min-width: 360px;
   padding: 10px;
   padding-top: 20px;
   margin-left: 40px;
@@ -130,5 +131,15 @@
   border: 2px solid #5faf5f;
   border-radius: 50%;
   box-shadow: 10px 10px 5px #c5c5c5;
+}
+
+@media (max-width: 775px) {
+  .about-me-summary {
+    font-size: 16px;
+  }
+  .about-me-content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 </style>
