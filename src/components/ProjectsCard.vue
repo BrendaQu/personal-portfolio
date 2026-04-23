@@ -87,6 +87,10 @@ const getImgUrl = (img: string) => {
 
 .project-img {
   border-radius: 5px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
 }
 
 .fa-solid {
