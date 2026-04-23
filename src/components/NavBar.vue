@@ -206,7 +206,8 @@ const scrollTo = (id: string) => {
   color: #5cb85c !important;
 }
 .nav-item a:focus {
-  color: #5cb85c !important;
+  outline: none;
+  color: inherit;
 }
 
 .fa-solid {
