@@ -54,10 +54,10 @@
 }
 
 .Landing-summary {
-  animation: fadeUp 1s ease 2.7s both;
+  animation: fadeUp 1s ease 2.5s both;
 }
 .landing-subtitle {
-  animation: fadeUp 1s ease 2s both;
+  animation: fadeUp 1s ease 1.7s both;
 }
 @keyframes typing {
   from {
