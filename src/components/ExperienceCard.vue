@@ -35,7 +35,6 @@ defineProps<{
   width: 100%;
   min-width: 330px;
   min-height: 450px;
-  overflow-y: auto;
 }
 
 .card-grouping-1 {
