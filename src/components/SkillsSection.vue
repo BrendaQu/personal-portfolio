@@ -5,7 +5,11 @@
       <div class="period-style">.</div>
     </div>
     <div class="skills-wrapper fade-in">
-      <div v-for="(skills, key) in skillsList" :key="key">
+      <div
+        v-for="(skills, key) in skillsList"
+        :key="key"
+        class="category-wrapper"
+      >
         <div class="category-name">{{ key }}</div>
         <div class="skills-items-container">
           <div class="skills-item" v-for="skill in skills">
@@ -50,12 +54,10 @@ const skillsList = {
 .skills-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 80%;
-  margin-left: 42px;
+  width: 100%;
+  margin: 0px 40px;
   text-align: left;
-  padding-top: 18px;
-  padding-left: 10px;
-  padding-bottom: 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 .skills-items-container {
@@ -67,6 +69,7 @@ const skillsList = {
   display: flex;
   padding: 8px;
   font-size: 15px;
+  white-space: nowrap;
 }
 
 .category-name {
@@ -74,20 +77,16 @@ const skillsList = {
   font-weight: bold;
   padding-top: 12px;
 }
+
+.category-wrapper {
+  margin-right: 40px;
+}
 .fa-caret-right {
   color: #198754;
   padding-top: 3px;
 }
 
-@media (max-width: 625px) {
-  .skills-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 10px;
-  }
-}
-
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .skills-wrapper {
     display: grid;
     grid-template-columns: 1fr;

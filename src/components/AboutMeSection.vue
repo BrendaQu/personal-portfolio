@@ -101,7 +101,7 @@
   padding: 10px;
   padding-top: 20px;
   margin-left: 40px;
-  margin-right: 20px;
+  margin-right: 50px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
 }

@@ -152,9 +152,10 @@ const handleClick = (companyId: string) => {
     flex-direction: row;
     align-items: flex-start;
     min-width: 90%;
+    margin-right: 50px;
   }
   .exp-nav-side-item {
-    width: 175px;
+    width: 150px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

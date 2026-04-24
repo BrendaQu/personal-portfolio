@@ -28,9 +28,7 @@ onMounted(() => {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        console.log(entry);
         if (entry.isIntersecting) {
-          console.log("in if is intersecting", entry.target.id);
           entry.target.classList.add("visible");
         } else {
           entry.target.classList.remove("visible");
