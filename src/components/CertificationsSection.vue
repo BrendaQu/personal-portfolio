@@ -4,7 +4,7 @@
       Certifications
       <div class="period-style">.</div>
     </div>
-    <div class="certifications-wrapper">
+    <div class="certifications-wrapper fade-in">
       <a
         class="cert-card"
         href="https://www.credly.com/badges/dea3424f-39e0-4280-90c5-32ea8c5a4fe9/public_url"

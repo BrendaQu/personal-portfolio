@@ -4,7 +4,7 @@
       Projects
       <div class="period-style">.</div>
     </div>
-    <div class="project-section-wrapper">
+    <div class="project-section-wrapper fade-in">
       <div v-for="project in projectList">
         <ProjectsCard
           :projectTitle="project.projectTitle"

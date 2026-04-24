@@ -30,7 +30,7 @@ const props = defineProps<{
   projectTitle: string;
   projectLink: string;
   projectDescription: string;
-  projectSkills: [];
+  projectSkills: string[];
   projectImg: string;
 }>();
 const handleClick = () => {
