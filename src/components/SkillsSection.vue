@@ -55,9 +55,9 @@ const skillsList = {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  margin: 0px 40px;
+  margin: 0px auto;
   text-align: left;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px 10px 40px;
 }
 
 .skills-items-container {

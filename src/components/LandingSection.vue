@@ -20,12 +20,13 @@
   flex-direction: row;
   gap: 20px;
   width: 100%;
-  min-height: 500px;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   font-size: 40px;
   text-align: center;
   flex-wrap: wrap;
+  padding-bottom: 80px;
 }
 .Landing-summary {
   font-size: 22px;
