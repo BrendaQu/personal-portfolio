@@ -57,7 +57,7 @@ const skillsList = {
   width: 100%;
   margin: 0px auto;
   text-align: left;
-  padding: 10px 20px 10px 50px;
+  padding: 20px 0px 0px 50px;
 }
 
 .skills-items-container {
@@ -90,7 +90,6 @@ const skillsList = {
   .skills-wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 10px;
   }
 }
 </style>
