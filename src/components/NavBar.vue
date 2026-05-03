@@ -111,7 +111,7 @@ const scrollTo = (id: string) => {
   }
 };
 </script>
-<style lang="css">
+<style lang="css" scoped>
 .nav-wrapper {
   display: flex;
   justify-content: space-between;

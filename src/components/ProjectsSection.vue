@@ -12,6 +12,7 @@
           :projectDescription="project.projectDescription"
           :projectSkills="project.projectSkills"
           :projectImg="project.projectImage"
+          :projectGithub="project.projectGithub"
         />
       </div>
     </div>
@@ -22,10 +23,27 @@ import ProjectsCard from "./ProjectsCard.vue";
 
 const projectList = [
   {
+    projectTitle: "Activity Dashboard App",
+    projectDescription:
+      "Interactive dashboard for visualizing and exploring exercise activity data.",
+    projectLink: "https://brendaqu.github.io/activity-dashboard/",
+    projectGithub: "https://github.com/BrendaQu/activity-dashboard/",
+    projectImage: "activity-dashboard.png",
+    projectSkills: [
+      "TypeScript",
+      "React",
+      "HTML",
+      "CSS",
+      "Recharts",
+      "Material UI",
+    ],
+  },
+  {
     projectTitle: "Simple Weather App",
     projectDescription:
       "Simple weather app displaying forecast for Next 5 days and hours.",
-    projectLink: "https://github.com/BrendaQu/simple-weather-app",
+    projectLink: "",
+    projectGithub: "https://github.com/BrendaQu/simple-weather-app",
     projectImage: "simple-weather-app.png",
     projectSkills: ["TypeScript", "Vue", "HTML", "CSS"],
   },
@@ -33,7 +51,8 @@ const projectList = [
     projectTitle: "Finance Tracker App",
     projectDescription:
       "Allows users to enter expenses and see monthly totals on their expenditures.",
-    projectLink: "https://github.com/BrendaQu/project2-finance-tracker",
+    projectLink: "",
+    projectGithub: "https://github.com/BrendaQu/project2-finance-tracker",
     projectImage: "finance-tracker-app.png",
     projectSkills: [
       "JavaScript",
@@ -49,7 +68,8 @@ const projectList = [
     projectTitle: "Social Media App",
     projectDescription:
       "Social media app includes login, post, and profile pages.",
-    projectLink: "https://github.com/Revature-MiniMint/front_end/",
+    projectLink: "",
+    projectGithub: "https://github.com/Revature-MiniMint/front_end/",
     projectImage: "social-media-app.png",
     projectSkills: [
       "JavaScript",

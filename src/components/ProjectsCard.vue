@@ -1,5 +1,5 @@
 <template>
-  <div @click="handleClick">
+  <div>
     <div class="project-card-wrapper">
       <div>
         <img
@@ -12,7 +12,12 @@
       <div class="project-heading-group">
         <div class="project-card-title">{{ projectTitle }}</div>
         <div>
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          <i class="fa-brands fa-github" @click="handleClickGithub" />
+          <i
+            v-if="projectLink !== ''"
+            class="fa-solid fa-arrow-up-right-from-square"
+            @click="handleClickLink"
+          ></i>
         </div>
       </div>
       <div class="project-card-description">{{ projectDescription }}</div>
@@ -29,12 +34,16 @@ import SkillsPill from "./SkillsPill.vue";
 const props = defineProps<{
   projectTitle: string;
   projectLink: string;
+  projectGithub: string;
   projectDescription: string;
   projectSkills: string[];
   projectImg: string;
 }>();
-const handleClick = () => {
+const handleClickLink = () => {
   window.open(props.projectLink);
+};
+const handleClickGithub = () => {
+  window.open(props.projectGithub);
 };
 
 const getImgUrl = (img: string) => {
@@ -50,7 +59,6 @@ const getImgUrl = (img: string) => {
   color: #111827;
   padding: 20px;
   margin: 10px;
-  cursor: pointer;
   text-align: left;
   transition:
     transform 0.3s ease,
@@ -70,7 +78,6 @@ const getImgUrl = (img: string) => {
 }
 
 .project-card-wrapper:hover {
-  color: #5cb85c;
   .project-img {
     opacity: 1;
     filter: grayscale(0%);
@@ -115,5 +122,19 @@ const getImgUrl = (img: string) => {
   flex-direction: row;
   padding-right: 4px;
   padding-top: 4px;
+}
+.fa-solid {
+  margin-right: 5px;
+}
+.fa-brands {
+  font-size: 21px;
+  margin-right: 5px;
+  color: black;
+}
+
+.fa-github:hover,
+.fa-arrow-up-right-from-square:hover {
+  color: #5cb85c;
+  cursor: pointer;
 }
 </style>
