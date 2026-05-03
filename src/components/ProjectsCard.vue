@@ -52,7 +52,7 @@ const getImgUrl = (img: string) => {
 </script>
 <style lang="css" scoped>
 .project-card-wrapper {
-  width: 370px;
+  width: 550px;
   height: 430px;
   border-radius: 5px;
   background-color: #e7e7e8;
@@ -136,5 +136,11 @@ const getImgUrl = (img: string) => {
 .fa-arrow-up-right-from-square:hover {
   color: #5cb85c;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .project-card-wrapper {
+    width: 370px;
+  }
 }
 </style>
